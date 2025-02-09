@@ -1,0 +1,27 @@
+{
+  "name": "directus-extension-firestore-sync",
+  "version": "1.0.0",
+  "type": "module",
+  "directus:extension": {
+    "type": "hook",
+    "path": "dist/index.js",
+    "source": "src/index.ts",
+    "host": "^11.4.1",
+    "name": "firestore-sync"
+  },
+  "scripts": {
+    "build": "directus-extension build",
+    "dev": "directus-extension build -w"
+  },
+  "dependencies": {
+    "@google-cloud/firestore": "^7.11.0",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@directus/cli": "9.14.3",
+    "@directus/extensions-sdk": "13.0.1",
+    "@types/lodash-es": "^4.17.12",
+    "@types/node": "^20.11.17",
+    "typescript": "^5.3.3"
+  }
+}
