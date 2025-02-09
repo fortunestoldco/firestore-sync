@@ -1,0 +1,2 @@
+# firestore-sync
+Directus Sync
